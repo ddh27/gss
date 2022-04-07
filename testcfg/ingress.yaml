@@ -1,0 +1,9 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example-ingress
+  namespace: k8syaml-env-dev
+spec:
+  backend:
+    serviceName: testsvc
+    servicePort: 80
